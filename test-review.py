@@ -17,7 +17,7 @@ def calculate_sum(numbers):
     return sum(numbers)
 
 
-# Function to fetch user data from an API with async handling
+# Function to fetch user data from an API with async handling   
 async def fetch_user_data(session, user_id):
     try:
         url = f"{API_BASE_URL}/users/{user_id}"
