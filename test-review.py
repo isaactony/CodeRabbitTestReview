@@ -14,7 +14,7 @@ API_BASE_URL = "https://jsonplaceholder.typicode.com"
 def calculate_sum(numbers):
     if not isinstance(numbers, list) or not all(isinstance(num, int) for num in numbers):  
         raise TypeError("Input must be a list of integers.")
-    return sum(numbers)
+    return sum(numbers)  
 
 
 # Function to fetch user data from an API with async handling   
