@@ -23,7 +23,7 @@ async def fetch_user_data(session, user_id):
         url = f"{API_BASE_URL}/users/{user_id}"
         async with session.get(url) as response:
             if response.status != 200:
-                raise Exception(f"API call failed with status {response.status}")
+                raise Exception(f"API call failed with status {response.status}")  
             data = await response.json()
             logging.info(f"User Data: {data}")  # Avoid logging sensitive information in production
             return data
