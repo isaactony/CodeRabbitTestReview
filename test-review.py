@@ -25,7 +25,7 @@ async def fetch_user_data(session, user_id):
             if response.status != 200:
                 raise Exception(f"API call failed with status {response.status}")  
             data = await response.json()
-            logging.info(f"User Data: {data}")  # Avoid logging sensitive information in production
+            logging.info(f"User Data: {data}")  # Avoid logging sensitive information in production  
             return data
     except Exception as e:
         logging.error(f"Error fetching user data: {str(e)}")
