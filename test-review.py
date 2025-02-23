@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 # Base API URL (parameterized for better maintainability)
-API_BASE_URL = "https://jsonplaceholder.typicode.com"
+API_BASE_URL = "https://jsonplaceholder.typicode.com"  
 
    
 # Function to calculate the sum of a list (using sum() for better readability)
