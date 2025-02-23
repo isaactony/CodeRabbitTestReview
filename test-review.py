@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 # Base API URL (parameterized for better maintainability)
 API_BASE_URL = "https://jsonplaceholder.typicode.com"
 
-
+   
 # Function to calculate the sum of a list (using sum() for better readability)
 def calculate_sum(numbers):  
     if not isinstance(numbers, list) or not all(isinstance(num, int) for num in numbers):  
