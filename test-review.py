@@ -11,7 +11,7 @@ API_BASE_URL = "https://jsonplaceholder.typicode.com"
 
 
 # Function to calculate the sum of a list (using sum() for better readability)
-def calculate_sum(numbers):
+def calculate_sum(numbers):  
     if not isinstance(numbers, list) or not all(isinstance(num, int) for num in numbers):  
         raise TypeError("Input must be a list of integers.")
     return sum(numbers)     
